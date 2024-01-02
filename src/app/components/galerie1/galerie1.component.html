@@ -1,0 +1,12 @@
+<div class="content_galery p-2 flex items-center gap-2">
+  <div>
+    <img
+      class="w-12 h-12 rounded-full"
+      [src]="'../../../assets/img/' + galery.url"
+      alt=""
+    />
+  </div>
+  <div>
+    <p class="galery_text dark:text-white cursor-pointer">@{{ galery.title }}</p>
+  </div>
+</div>
