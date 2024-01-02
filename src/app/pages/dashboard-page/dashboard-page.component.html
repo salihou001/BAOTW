@@ -928,7 +928,7 @@
 
   <!-- OVERLAY profile options -->
   <div class="overlay_profile hidden">
-    <div class="content_edit_profile border-r">
+    <div class="content_edit_profile border-r bg-white dark:border-white dark:bg-black">
       <div class="edit_profile h-full max-w-5xl mx-auto">
         <div class="edit_profile_head h-full">
           <div class="head_icons max-w-5xl mx-auto">
@@ -943,24 +943,135 @@
               class="profilImage"
             >
               <img
-                class="w-32 h-32 rounded-full object-cover border-4 border-primary dark:border-white"
+                class="w-32 h-32 rounded-full object-cover border-4 border-primary"
                 src="../assets/img/abou.jpg"
                 alt=""
               />
             </div>
             <div (click)="hideSide()" class="badge absolute top-2 left-2 bg-white dark:bg-black rounded-full cursor-pointer">
-              <svg width="32px" height="32px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="currentColor"/>
               </svg>
             </div>
           </div>
           <div class="profil_info h-full">
-            <div class="h-full max-w-4xl bg-rose-200 mx-auto text-white">
-                <div class="badge_recompense font-bold flex items-center pt-24 justify-center gap-8">
-                  <div class="badge_1">1</div>
-                  <div class="badge_2">2</div>
-                  <div class="badge_3">3</div>
+            <div class="h-full max-w-7xl mx-auto dark:text-white">
+                <div class="badge_recompense font-bold flex items-center pt-16 justify-center gap-8">
+                  <div class="badge_1">
+                    <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.5 12.5L10.0089 14.0089C10.3526 14.3526 10.5245 14.5245 10.7198 14.5822C10.8914 14.6328 11.0749 14.6245 11.2412 14.5585C11.4305 14.4834 11.5861 14.2967 11.8973 13.9232L16 9M16.3287 4.75855C17.0676 4.77963 17.8001 5.07212 18.364 5.636C18.9278 6.19989 19.2203 6.9324 19.2414 7.67121C19.2623 8.40232 19.2727 8.76787 19.2942 8.85296C19.3401 9.0351 19.2867 8.90625 19.383 9.06752C19.428 9.14286 19.6792 9.40876 20.1814 9.94045C20.6889 10.4778 21 11.2026 21 12C21 12.7974 20.6889 13.5222 20.1814 14.0595C19.6792 14.5912 19.428 14.8571 19.383 14.9325C19.2867 15.0937 19.3401 14.9649 19.2942 15.147C19.2727 15.2321 19.2623 15.5977 19.2414 16.3288C19.2203 17.0676 18.9278 17.8001 18.364 18.364C17.8001 18.9279 17.0676 19.2204 16.3287 19.2414C15.5976 19.2623 15.2321 19.2727 15.147 19.2942C14.9649 19.3401 15.0937 19.2868 14.9325 19.3831C14.8571 19.4281 14.5912 19.6792 14.0595 20.1814C13.5222 20.6889 12.7974 21 12 21C11.2026 21 10.4778 20.6889 9.94047 20.1814C9.40874 19.6792 9.14287 19.4281 9.06753 19.3831C8.90626 19.2868 9.0351 19.3401 8.85296 19.2942C8.76788 19.2727 8.40225 19.2623 7.67121 19.2414C6.93238 19.2204 6.19986 18.9279 5.63597 18.364C5.07207 17.8001 4.77959 17.0676 4.75852 16.3287C4.73766 15.5976 4.72724 15.2321 4.70578 15.147C4.65985 14.9649 4.71322 15.0937 4.61691 14.9324C4.57192 14.8571 4.32082 14.5912 3.81862 14.0595C3.31113 13.5222 3 12.7974 3 12C3 11.2026 3.31113 10.4778 3.81862 9.94048C4.32082 9.40876 4.57192 9.14289 4.61691 9.06755C4.71322 8.90628 4.65985 9.03512 4.70578 8.85299C4.72724 8.7679 4.73766 8.40235 4.75852 7.67126C4.77959 6.93243 5.07207 6.1999 5.63597 5.636C6.19986 5.07211 6.93238 4.77963 7.67121 4.75855C8.40232 4.73769 8.76788 4.72727 8.85296 4.70581C9.0351 4.65988 8.90626 4.71325 9.06753 4.61694C9.14287 4.57195 9.40876 4.32082 9.94047 3.81863C10.4778 3.31113 11.2026 3 12 3C12.7974 3 13.5222 3.31114 14.0595 3.81864C14.5913 4.32084 14.8571 4.57194 14.9325 4.61693C15.0937 4.71324 14.9649 4.65988 15.147 4.70581C15.2321 4.72726 15.5976 4.73769 16.3287 4.75855Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="badge_2">
+                    <svg width="32px" height="32px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+                      <path d="M16 44L24 40L32 44V24.9444C29.877 26.8446 27.0734 28 24 28C20.9266 28 18.123 26.8446 16 24.9444V44Z" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M36 16C36 19.554 34.455 22.7471 32 24.9444C29.877 26.8446 27.0734 28 24 28C20.9266 28 18.123 26.8446 16 24.9444C13.545 22.7471 12 19.554 12 16C12 9.37258 17.3726 4 24 4C30.6274 4 36 9.37258 36 16Z" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M24 21V11L22 12M24 21H26M24 21H22" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="badge_3">
+                    <svg height="32px" width="32" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 511.999 511.999" xml:space="preserve">
+                      <path style="fill:#FFB655;" d="M505.454,239.82l-47.748-49.357l9.616-67.995c1.758-12.431-6.659-24.016-19.023-26.183L380.658,84.42
+                        l-32.186-60.663c-5.88-11.089-19.496-15.515-30.779-10.001L256,43.914l-61.694-30.16c-2.821-1.378-5.787-2.135-8.743-2.323
+                        c-0.739-0.047-1.477-0.057-2.212-0.034c-1.359,0.043-2.706,0.22-4.029,0.496c-0.261,0.054-0.518,0.118-0.776,0.182
+                        c-6.226,1.528-11.792,5.592-15.02,11.681L131.34,84.418L63.699,96.283c-1.545,0.272-3.029,0.689-4.439,1.238
+                        c-0.704,0.275-1.392,0.582-2.059,0.918c-2.666,1.35-5.013,3.187-6.941,5.379c-1.93,2.192-3.443,4.738-4.44,7.505
+                        c-0.5,1.382-0.87,2.821-1.1,4.298c-0.344,2.214-0.372,4.516-0.043,6.847l9.616,67.995l-23.875,24.678L6.545,239.82
+                        c-8.727,9.022-8.727,23.341,0,32.362l46.243,47.799l1.507,1.556l-9.616,68c-0.329,2.33-0.301,4.63,0.043,6.845
+                        c0.194,1.249,0.51,2.462,0.9,3.646c0.99,3.015,2.563,5.793,4.641,8.153c0.483,0.548,0.991,1.074,1.524,1.575
+                        c0.692,0.65,1.438,1.243,2.208,1.808c0.633,0.464,1.292,0.894,1.974,1.294c1.049,0.614,2.14,1.171,3.294,1.62
+                        c0.704,0.275,1.429,0.517,2.169,0.723c0.74,0.208,1.497,0.379,2.27,0.515l67.641,11.864l32.186,60.664
+                        c0.735,1.387,1.592,2.669,2.549,3.84c3.829,4.686,9.277,7.604,15.085,8.344c1.452,0.185,2.926,0.234,4.403,0.14
+                        c0.739-0.047,1.479-0.129,2.216-0.248c1.475-0.237,2.943-0.621,4.386-1.156c0.721-0.268,1.435-0.573,2.14-0.919L256,468.088
+                        l61.694,30.158c3.286,1.606,6.771,2.368,10.204,2.368c8.352,0,16.406-4.51,20.575-12.37l32.186-60.664l67.641-11.864
+                        c12.364-2.167,20.781-13.751,19.023-26.179l-9.616-68l47.748-49.357C514.181,263.159,514.181,248.842,505.454,239.82z"/>
+                      <g>
+                        <path style="fill:#FFFFFF;" d="M234.008,284.362v-19.346h11.795c5.173,0,9.073-3.997,9.073-9.3c0-5.5-3.9-9.646-9.073-9.646
+                          h-11.795v-19.116H256v-19.403h-32.321c-5.502,0-9.65,3.901-9.65,9.073v77.953c0,5.153,4.239,9.188,9.65,9.188H256v-19.403H234.008z
+                          "/>
+                        <path style="fill:#FFFFFF;" d="M303.796,297.236c1.28,4.38,5.418,7.211,10.541,7.211c5.162,0,9.38-2.994,10.465-7.342l4.9-18.207
+                          l4.884,18.134c1.103,4.44,5.295,7.415,10.48,7.415c5.024,0,9.146-2.782,10.547-7.23l22.447-77.655
+                          c0.377-1.219,0.377-2.186,0.377-2.714c0-5.128-4.74-9.3-10.566-9.3c-4.293,0-7.894,2.619-8.952,6.47l-13.709,48.668l-5.658-21.094
+                          c-1.299-4.447-4.982-7.103-9.852-7.103c-5.007,0-8.927,2.864-10.026,7.308l-5.599,20.885l-13.701-48.623
+                          c-1.067-3.893-4.67-6.51-8.962-6.51c-5.826,0-10.564,4.172-10.564,9.3c0,0.531,0,1.499,0.38,2.72L303.796,297.236z"/>
+                        <path style="fill:#FFFFFF;" d="M143.56,303.764c5.599,0,9.987-4.035,9.987-9.188v-37.739l20.114,39.145
+                          c3.395,6.772,8.091,7.782,10.589,7.782c5.604,0,9.995-4.035,9.995-9.188v-78.071c0-5.19-4.203-8.954-9.995-8.954
+                          c-5.786,0-9.987,3.766-9.987,8.954v37.576l-19.237-37.905c-1.223-2.358-4.47-8.625-11.466-8.625c-5.792,0-9.996,3.817-9.996,9.073
+                          v77.953C133.563,299.815,137.861,303.764,143.56,303.764z"/>
+                        <path style="fill:#FFFFFF;" d="M264.49,226.954c5.173,0,9.073-4.245,9.073-9.874c0-5.432-3.901-9.529-9.073-9.529H256v19.403
+                          H264.49z"/>
+                        <path style="fill:#FFFFFF;" d="M273.561,294.119c0-5.472-3.984-9.757-9.073-9.757H256v19.403h8.49
+                          C269.662,303.764,273.561,299.618,273.561,294.119z"/>
+                      </g>
+                      <g>
+                        <path style="fill:#E69629;" d="M6.545,272.181l47.748,49.355l-9.616,68c-1.758,12.428,6.659,24.011,19.023,26.179l67.641,11.864
+                          l32.186,60.664c5.882,11.089,19.496,15.514,30.779,10.001L256,468.088V303.764h-32.321c-5.41,0-9.65-4.035-9.65-9.188v-77.953
+                          c0-5.173,4.149-9.073,9.65-9.073H256V43.914l-61.694-30.16c-11.283-5.514-24.899-1.088-30.779,10.001L131.34,84.418L63.699,96.283
+                          c-12.364,2.169-20.779,13.753-19.023,26.183l9.616,67.995L6.545,239.82C-2.182,248.842-2.182,263.161,6.545,272.181z
+                          M133.563,216.623c0-5.257,4.205-9.073,9.996-9.073c6.996,0,10.243,6.267,11.466,8.625l19.237,37.905v-37.576
+                          c0-5.19,4.2-8.954,9.987-8.954c5.792,0,9.995,3.766,9.995,8.954v78.071c0,5.153-4.391,9.188-9.995,9.188
+                          c-2.498,0-7.196-1.008-10.589-7.782l-20.114-39.145v37.739c0,5.153-4.386,9.188-9.987,9.188c-5.699,0-9.996-3.95-9.996-9.188
+                          L133.563,216.623L133.563,216.623z"/>
+                        <path style="fill:#E69629;" d="M234.008,246.071h11.795c5.173,0,9.073,4.146,9.073,9.646c0,5.303-3.9,9.3-9.073,9.3h-11.795v19.346
+                          H256v-57.408h-21.991V246.071z"/>
+                      </g>
+                      </svg>
+                  </div>
                 </div>
+                <!-- template -->
+                <form>
+                  <div class="pb-12  max-w-4xl mx-auto px-4">
+                    <h2 class="mt-4 text-center text-2xl text-base font-semibold leading-7 text-gray-900">Front-End Developer 🔥</h2>
+              
+                    <div class="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-6">
+                      <div class="sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                        <div class="">
+                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="px-2 dark:bg-transparent block border-black dark:border-white w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                      </div>
+                      <div class="sm:col-span-3">
+                        <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                        <div class="">
+                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="px-2 dark:bg-transparent block border-black dark:border-white w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                      </div>
+                      <div class="sm:col-span-4 md:col-span-6">
+                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                        <div class="w-full">
+                          <input id="email" name="email" type="email" autocomplete="email" class="px-2 bg-transparent dark:border-white border-black block w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                      </div>
+              
+                      <div class="sm:col-span-3 md:col-span-6">
+                        <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Catégory</label>
+                        <div class="w-full">
+                          <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md dark:bg-transparent block border-black dark:border-white w-full rounded-md  py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            <option>Front-End Developer</option>
+                            <option>Designer</option>
+                            <option>Fullstack Developer</option>
+                            <option>Backend Developer</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class=" sm:col-span-2 md:col-span-6 mb-2">
+                        <label class="block text-sm font-medium mb-1" for="card-nr">Number <span class="text-red-500">*</span></label>
+                        <input id="card-nr" class="block w-full rounded-md bg-transparent py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2" type="text" placeholder="(+237) 1234 1234 1234" />
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2  md:col-span-6">
+                    <label class="block text-sm font-medium mb-1" for="card-nr">Paypal <span class="text-red-500">*</span></label>
+                    <button class="font-medium text-sm inline-flex items-center justify-center px-3 py-2 border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out w-full bg-indigo-500 hover:bg-indigo-600 text-white focus:outline-none focus-visible:ring-2">Pay with PayPal - $1</button>
+                  </div>
+                  </div>
+                  <div class="flex items-center justify-end gap-2 px-4">
+                    <button type="button" class="text-sm font-semibold text-gray-900">Cancel</button>
+                    <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+                  </div>
+                </form>
+                <!-- end template -->
             </div>
           </div>
       </div>

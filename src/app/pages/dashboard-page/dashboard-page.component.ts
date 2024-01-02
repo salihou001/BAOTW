@@ -158,8 +158,7 @@ export class DashboardPageComponent {
     TL
     .to('.content_edit_profile',{
       x:'*',
-      duration: .8,
-      delay: .1,
+      duration: .5,
       ease: 'power4.out'
     })
     .to('.overlay_profile',{
