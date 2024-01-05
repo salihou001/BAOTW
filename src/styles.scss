@@ -14,7 +14,7 @@ $gray: #e5e7eb;
 }
 html,
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   // overflow: hidden;
 }
 
@@ -93,7 +93,9 @@ div p.galery_text {
   background: $gray;
   color: $black;
 }
-
+.nav .profil{
+  z-index: 30;
+}
 // MEDIA QUERY
 
 @media screen and (min-width: 1280px) {

@@ -19,7 +19,7 @@ export class DashboardPageComponent {
   @ViewChild('container', { static: true }) container: any;
   @ViewChild('contain', { static: true }) content: any;
   toggle!: boolean;
-  showModal=false;
+  isOpen=false;
   listeGaleri1: Galery1[] = [
     { id: 1, url: 'comment-1.png', title: 'Ln_dev' },
     { id: 2, url: 'comment-2.png', title: 'abou_dev' },
@@ -170,11 +170,11 @@ export class DashboardPageComponent {
       duration: .3,
       ease: 'power4.out'
     },"<")
-    .to('body',{
-      overflowY:'scroll',
-      duration: .3,
-      ease: 'power4.out'
-    },"<.3")
+    // .to('body',{
+    //   overflowY:'scroll',
+    //   duration: .3,
+    //   ease: 'power4.out'
+    // },"<.3")
   }
   showSide(){
     const TL = gsap.timeline();
@@ -190,11 +190,11 @@ export class DashboardPageComponent {
       delay: .1,
       ease: 'power4.out'
     },"<.3")
-    .to('body',{
-      overflow:'hidden',
-      duration: .3,
-      ease: 'power4.out'
-    },"<")
+    // .to('body',{
+    //   overflow:'hidden',
+    //   duration: .3,
+    //   ease: 'power4.out'
+    // },"<")
   }
   // cette methode permet d'afficher l'onglet home
   onHome(){

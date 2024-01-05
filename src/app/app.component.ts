@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import Alpine from 'alpinejs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    Alpine.start();
+  }
 }
