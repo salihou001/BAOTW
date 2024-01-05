@@ -4,6 +4,7 @@ import { Galery1 } from 'src/app/components/galerie1/galerie1.model';
 import { Galery2 } from 'src/app/components/galerie2/galerie2.model';
 import { Galery3 } from 'src/app/components/galerie3/galerie3.model';
 import { gsap } from 'gsap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-page',
@@ -11,11 +12,14 @@ import { gsap } from 'gsap';
   styleUrls: ['./dashboard-page.component.scss']
 })
 export class DashboardPageComponent {
+  constructor(private router:Router){
+  }
   @ViewChild('themeToggle', { static: true }) themeToggle: any;
   @ViewChild('toggleIcon', { static: true }) toggleIcon: any;
   @ViewChild('container', { static: true }) container: any;
   @ViewChild('contain', { static: true }) content: any;
   toggle!: boolean;
+  showModal=false;
   listeGaleri1: Galery1[] = [
     { id: 1, url: 'comment-1.png', title: 'Ln_dev' },
     { id: 2, url: 'comment-2.png', title: 'abou_dev' },
@@ -96,7 +100,7 @@ export class DashboardPageComponent {
         .to(
           this.content.nativeElement,
           {
-            fill: '#000',
+            fill: '#8e8e8e',
             duration: 0.5,
             ease: 'power2.in',
           },
@@ -162,7 +166,7 @@ export class DashboardPageComponent {
       ease: 'power4.out'
     })
     .to('.overlay_profile',{
-      display:'none',
+      display:'none', 
       duration: .3,
       ease: 'power4.out'
     },"<")
@@ -191,5 +195,9 @@ export class DashboardPageComponent {
       duration: .3,
       ease: 'power4.out'
     },"<")
+  }
+  // cette methode permet d'afficher l'onglet home
+  onHome(){
+    this.router.navigate(['home']);
   }
 }

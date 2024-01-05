@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 import SplitType from 'split-type';
 import { ApplicationGuardService } from 'src/app/services/guard/application-guard.service';
 
@@ -18,10 +18,10 @@ export class HomePageComponent implements OnInit {
   scroll: any;
   constructor(private guardService: ApplicationGuardService,private router:Router){}
   ngOnInit(): void {
-    this.scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]') as HTMLElement,
-      smooth: true,
-  });
+  //   this.scroll = new LocomotiveScroll({
+  //     el: document.querySelector('[data-scroll-container]') as HTMLElement,
+  //     smooth: true,
+  // });
     let splitter = new SplitType('.body_content_text--line');
     this.initAnimation();
     this.initAnimation2();

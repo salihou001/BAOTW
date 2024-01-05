@@ -13,6 +13,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  // plugins: [require("daisyui")],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
   darkMode: 'class',
 };
