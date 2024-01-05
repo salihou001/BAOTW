@@ -53,9 +53,11 @@ export class DashboardPageComponent {
   ]
   ngOnInit(): void {
     let scroller = document.querySelector('#scroller') as HTMLDivElement;
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', (e:any) => {
       let {clientHeight,scrollHeight,scrollTop}= scroller;
+      let deltaY = e.deltaY;
       // console.log(clientHeight,scrollHeight,scrollTop);
+      // console.log(deltaY);
       if(clientHeight === scrollHeight){
         // Ajout d'image ici ! 
         this.getImage();
@@ -65,7 +67,7 @@ export class DashboardPageComponent {
   async getImage(){
     let res = await fetch("https://source.unsplash.com/random");
     let url = res.url;
-    console.log(url);
+    // console.log(url);
     let card: Card= {id: this.listeUsers.length + 1,userName:'gamtchessi_dev', url: url, description: '3D' }
     this.listeUsers.push(card);
   }
