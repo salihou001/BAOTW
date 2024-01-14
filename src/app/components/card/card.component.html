@@ -50,13 +50,32 @@
       >
     </p>
   </div>
-  <div class="card_img w-full">
+  <div class="card_img w-full z-10">
     <img
-      class="rounded-lg md:h-96 object-cover w-full"
+      class="rounded-lg md:h-96 object-cover w-full img_loading"
       [src]="user.url"
       alt=""
-    />                                                                                                                                                            
-  </div>
+      id=""
+    />
+    <!-- <div class="relative overflow-hidden">
+      <div *ngIf="!charger" class="static w-full space-y-3 overflow-hidden  rounded-lg  dark:bg-black bg-[#F4F2EE] p-3 shadow before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/20 hover:shadow-lg before:animate-[shimmer_1.5s_infinite]">
+        <div class="h-36 w-full rounded-lg bg-neutral-300 dark:bg-neutral-600"></div>
+        <div class="space-y-3">
+          <div class="h-5 w-8/12 rounded-full bg-neutral-300 dark:bg-neutral-600"></div>
+          <div class="space-y-1">
+            <div class="h-4 w-full rounded-full bg-neutral-300 shadow dark:bg-neutral-600"></div>
+            <div class="h-4 w-full rounded-full bg-neutral-300 shadow dark:bg-neutral-600"></div>
+            <div class="h-4 w-full rounded-full bg-neutral-300 shadow dark:bg-neutral-600"></div>
+            <div class="h-4 w-7/12 rounded-full bg-neutral-300 shadow dark:bg-neutral-600"></div>
+          </div>
+          <div class="flex gap-2">
+            <div class="h-5 w-16 rounded-full bg-neutral-300 dark:bg-neutral-600"></div>
+            <div class="h-5 w-12 rounded-full bg-neutral-300 dark:bg-neutral-600"></div>
+          </div>
+        </div>
+      </div>
+    </div>                                                                                                                                                            
+  </div> -->
   <div class="content_scroll_info flex items-center gap-4 p-2 w-full">
     <div class="flex items-center gap-2">
       <svg
@@ -112,34 +131,11 @@
       <span class="inline-block dark:text-white text-primary">242</span>
     </div>
     <div class="flex items-center gap-2">
-      <svg
-        class="svg"
-        width="20px"
-        height="20px"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="19"
-          cy="5"
-          r="3"
-          stroke="#1C274C"
-          stroke-width="1.5"
-        />
-        <path
-          d="M7 14L9.29289 11.7071C9.68342 11.3166 10.3166 11.3166 10.7071 11.7071L12.2929 13.2929C12.6834 13.6834 13.3166 13.6834 13.7071 13.2929L17 10M17 10V12.5M17 10H14.5"
-          stroke="#1C274C"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M22 10.5V12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 10.8717 2 9.87835 2.02008 9M13.5 2H12C7.28595 2 4.92893 2 3.46447 3.46447C3.02355 3.90538 2.71538 4.4272 2.5 5.0699"
-          stroke="#1C274C"
-          stroke-width="1.5"
-          stroke-linecap="round"
-        />
+      <svg class="w-[24px] h-[24px] fill-[#000]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"></path>
+      
       </svg>
       <span class="inline-block dark:text-white text-primary"
         >12.4K</span

@@ -9,8 +9,13 @@ module.exports = {
         'black': '#0f172a',
         'primary': '#CF2E87',
         'bleu': '#22d3ee',
-        'gray': '#e5e7eb',
+        'gray': '#F4F2EE',
       },
+      keyframes: {
+        shimmer: {
+          '100%' : {transform: 'translateX(100%)'}
+        }
+      }
     },
   },
   // plugins: [require("daisyui")],

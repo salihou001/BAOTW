@@ -9,7 +9,13 @@ import { Card } from './card.model';
 export class CardComponent implements OnInit{
   @Input()
   user!: Card;
+  charger=false;
   ngOnInit(){
-    console.log(this.user.url);
+    // document.querySelectorAll('.img_loading')?.forEach(element =>{
+    //   element.addEventListener('onload', () =>{
+    //     this.charger = true;
+    //   });
+    // })
   }
+  showImage(){}
 }

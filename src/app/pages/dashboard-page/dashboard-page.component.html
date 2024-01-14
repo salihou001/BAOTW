@@ -1,9 +1,9 @@
 <div class="super-container w-full sticky top-0">
     <!-- NAVBAR -->
     <div
-      class="nav w-full h-auto z-10 flex items-center md:gap-4 md:pl-2 bg-white dark:bg-black text-black dark:text-white"
+      class="nav w-full h-auto flex items-center md:gap-4 md:pl-2 bg-white dark:bg-black text-black dark:text-white"
     >
-      <div class="profil px-2 py-1">
+      <div class="profil px-2 py-1 z-50">
         <div class="hidden md:block logo__title cursor-pointer text-primary">
           BAOTW
         </div>
@@ -157,11 +157,11 @@
   <!-- END NAV -->
   <!-- Container -->
   <div class="grid grid-cols-4 gap-2 bg-gray dark:bg-black">
-    <div class="h-screen sticky top-12 grid grid-cols-1 grid-rows-2 gap-2 p-2 sectionLeft">
+    <div class="h-screen sticky top-14 grid grid-cols-1 grid-rows-2 gap-2 p-2 sectionLeft">
       
       <!-- LEFT SECTION -->
       <div
-        class="border rounded-lg bg-white border-black dark:bg-black dark:border-white"
+        class="border border-white rounded-lg bg-white dark:bg-black dark:border-white"
       >
         <div class="wrapper p-4 relative">
           <img
@@ -213,7 +213,7 @@
         </div>
       </div>
       <div
-        class="section_shortcuts border rounded-lg p-2 pt-8 bg-white dark:bg-black border-black dark:border-white"
+        class="section_shortcuts border rounded-lg p-2 pt-8 bg-white dark:bg-black border-white dark:border-white"
       >
         <div class="flex items-center justify-between px-4">
           <div class="text-xl font-bold dark:text-white">Your Shortcuts</div>
@@ -230,7 +230,7 @@
       <div class="rounded-lg content_scroll">
         <!-- START HEADER -->
         <div
-          class="content_scroll_head sticky top-14 border dark:border-white bg-white backdrop-blur-2xl rounded-lg border-black dark:bg-black pr-2"
+          class="content_scroll_head sticky top-14 border z-10 dark:border-white bg-white backdrop-blur-2xl rounded-lg border-white dark:bg-black pr-2"
         >
           <div class="flex items-center gap-2">
             <div class="p-2">
@@ -241,7 +241,7 @@
               />
             </div>
             <div
-              class="w-full px-3 flex border bg-gray border-black dark:border-white items-center rounded-xl dark:bg-black"
+              class="w-full px-3 flex border bg-gray border-white dark:border-white items-center rounded-xl dark:bg-black"
             >
               <input
                 class="w-full h-10 text-lg  bg-transparent border-none outline-none"
@@ -347,9 +347,9 @@
         <!-- END HEADER -->
   
         <!-- SECTION CENTER -->
-        <div class="card -z-1">
+        <div class="card">
           <div
-            class="scroll_part h-full dark:border-white flex flex-col w-full mt-4 border border-black rounded-lg items-center bg-white dark:bg-black gap-2 p-2"
+            class="scroll_part h-full dark:border-white flex flex-col w-full mt-4 border border-white rounded-lg items-center bg-white dark:bg-black gap-2 p-2"
           >
             <!-- CARD -->
             <div class="card-head w-full flex items-center justify-between">
@@ -517,7 +517,7 @@
                   />
                 </div>
                 <div
-                  class="w-full px-3 border border-black bg-gray dark:border-white flex items-center rounded-xl bg-gray-200"
+                  class="w-full px-3 border border-white bg-gray dark:border-white flex items-center rounded-xl bg-gray-200"
                 >
                   <input
                     class="w-full h-10 text-lg  bg-transparent border-none outline-none"
@@ -704,7 +704,7 @@
                   />
                 </div>
                 <div
-                  class="w-full border border-black dark:border-white flex items-center overflow-hidden rounded-xl bg-gray-200"
+                  class="w-full border border-white dark:border-white flex items-center overflow-hidden rounded-xl bg-gray-200"
                 >
                   <input
                     class="w-full h-10 text-lg pl-2 bg-gray border-none outline-none rounded-xl"
@@ -718,7 +718,7 @@
             </div>
   
             <!-- START CARD -->
-            <div class="w-full">
+            <div class="w-full ">
               <app-card *ngFor="let user of listeUsers" [user]="user" />
             </div>
             <!-- END CARD -->
@@ -738,9 +738,9 @@
   
   
     <!-- RIGHT SECTION -->
-    <div class="h-screen sticky top-12 grid grid-cols-1 grid-rows-2 gap-2 p-2 sectionRight">
+    <div class="h-screen sticky top-14 grid grid-cols-1 grid-rows-2 gap-2 p-2 sectionRight">
       <div
-        class="sectionActivity border rounded-lg bg-white dark:bg-black border-black dark:border-white p-2"
+        class="sectionActivity border rounded-lg bg-white dark:bg-black border-white dark:border-white p-2"
       >
         <div class="flex items-center justify-between px-4">
           <div class="text-xl font-bold dark:text-white mt-4">Activity</div>
@@ -753,7 +753,7 @@
         <app-galerie2 *ngFor="let el of listeGaleri2" [galery2]="el" />
       </div>
       <div
-        class="sectionSuggestion border rounded-lg bg-white dark:bg-black border-black dark:border-white p-2"
+        class="sectionSuggestion border rounded-lg bg-white dark:bg-black border-white dark:border-white p-2"
       >
         <div class="zozor flex items-center justify-between px-2">
           <div class="text-xl font-bold dark:text-white mt-4">
@@ -835,26 +835,26 @@
                       <div class="sm:col-span-3">
                         <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
                         <div class="">
-                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="px-2 dark:bg-transparent block border-black dark:border-white w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="px-2 dark:bg-transparent block border-white dark:border-white w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                       </div>
                       <div class="sm:col-span-3">
                         <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
                         <div class="">
-                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="px-2 dark:bg-transparent block border-black dark:border-white w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="px-2 dark:bg-transparent block border-white dark:border-white w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                       </div>
                       <div class="sm:col-span-4 md:col-span-6">
                         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
                         <div class="w-full">
-                          <input id="email" name="email" type="email" autocomplete="email" class="px-2 bg-transparent dark:border-white border-black block w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input id="email" name="email" type="email" autocomplete="email" class="px-2 bg-transparent dark:border-white border-white block w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                       </div>
               
                       <div class="sm:col-span-3 md:col-span-6">
                         <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Catégory</label>
                         <div class="w-full">
-                          <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md dark:bg-transparent block border-black dark:border-white w-full rounded-md  py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md dark:bg-transparent block border-white dark:border-white w-full rounded-md  py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             <option>Front-End Developer</option>
                             <option>Designer</option>
                             <option>Fullstack Developer</option>
@@ -963,4 +963,12 @@
       </div>
     </div>
   </div>
+
+
+
+  <!-- SECTION SMS -->
+<div class="sms-block h-[400px] w-[400px] border absolute top-0">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sint?
 </div>
+</div>
+
