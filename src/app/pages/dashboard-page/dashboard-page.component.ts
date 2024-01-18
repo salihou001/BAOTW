@@ -5,6 +5,7 @@ import { Galery2 } from 'src/app/components/galerie2/galerie2.model';
 import { Galery3 } from 'src/app/components/galerie3/galerie3.model';
 import { gsap } from 'gsap';
 import { Router } from '@angular/router';
+import { Profil } from 'src/app/components/profil-message/profil.model';
 
 @Component({
   selector: 'app-dashboard-page',
@@ -39,6 +40,12 @@ export class DashboardPageComponent {
     { id: 3,userName:'elvis_dev', url: 'Worker-3.jpg', description: 'crypto' },
     { id: 4,userName:'gamtchessi_dev', url: 'testi-3.jpg', description: '3D' },
   ];
+  listeProfil: Profil[] = [
+    { id: 1,userName:'Ln_dev', url: 'testi-1.jpg', lastMessage: 'Yo ça dit quoi',date: '10 janv.'},
+    { id: 2,userName:'abou_dev', url: 'Worker-2.jpg', lastMessage: 'je suis entrain de le faire maintenant',date: '5 janv.' },
+    { id: 3,userName:'elvis_dev', url: 'Worker-3.jpg', lastMessage: 'La crypto la est morte',date: '1 janv.' },
+    { id: 4,userName:'gamtchessi_dev', url: 'testi-3.jpg', lastMessage: '3D ou 2D parceque',date: '10 janv.' },
+  ];
   listeUsers:Card[]= 
   [
     { id: 3,userName:'elvis_dev', url: 'pexels-mario-wallner-15085813.jpg', description: 'Beautifull Day for You'},
@@ -50,7 +57,8 @@ export class DashboardPageComponent {
     { id: 4,userName:'gamtchessi_dev', url: 'pexels-mehmet-ağırman-15277549.jpg', description: '3D' },
     { id: 4,userName:'gamtchessi_dev', url: 'pexels-andrew-neel-3143922.jpg', description: '3D' },
     { id: 4,userName:'gamtchessi_dev', url: 'pexels-adrien-olichon-3646206.jpg', description: '3D' },
-  ]
+  ];
+  toogleProfil = 1;
   ngOnInit(): void {
     let scroller = document.querySelector('#scroller') as HTMLDivElement;
     window.addEventListener('scroll', (e:any) => {
@@ -63,6 +71,24 @@ export class DashboardPageComponent {
         this.getImage();
       }
     });
+  }
+  toogleProfilMessage(){
+    let section = document.querySelector('.section_2') as HTMLDivElement;
+    let up = document.querySelector('.up') as HTMLDivElement;
+    let dwon = document.querySelector('.dwon') as HTMLDivElement;
+    if(this.toogleProfil === 1 ){
+      section.style.display = 'block';
+      up.style.display = 'none';
+      dwon.style.display = 'block';
+      this.toogleProfil++
+    }else{
+      if(this.toogleProfil === 2){
+        section.style.display = 'none';
+        up.style.display = 'block';
+        dwon.style.display = 'none';
+        this.toogleProfil--
+      }
+    }
   }
   async getImage(){
     let res = await fetch("https://source.unsplash.com/random");
@@ -183,7 +209,7 @@ export class DashboardPageComponent {
     TL
     .to('.overlay_profile',{
       display:'block',
-      duration: .1,
+      duration: .01,
       ease: 'power4.out'
     })
     .to('.content_edit_profile',{
@@ -191,14 +217,8 @@ export class DashboardPageComponent {
       duration: .8,
       delay: .1,
       ease: 'power4.out'
-    },"<.3")
-    // .to('body',{
-    //   overflow:'hidden',
-    //   duration: .3,
-    //   ease: 'power4.out'
-    // },"<")
+    },"<-.3")
   }
-  // cette methode permet d'afficher l'onglet home
   onHome(){
     this.router.navigate(['home']);
   }

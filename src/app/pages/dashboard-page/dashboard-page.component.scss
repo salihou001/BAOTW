@@ -7,18 +7,49 @@
     width: 100%;
     height: 100%;
 }
-.overlay_profile::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    // background: #424242;
-    position:inherit;
-    top: 0;
-    left: 0;
-}
+// .overlay_profile::before{
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     // background: #424242;
+//     position:inherit;
+//     top: 0;
+//     left: 0;
+// }
 .content_edit_profile{
+    position: absolute;
     height: 100%;
     width: 35%;
     // background-color: #fff;
     transform: translateX(-35%);
+}
+.sms-block{
+    position: fixed;
+    bottom: -.5%;
+    right:1.5%;
+    background-color: white;
+    z-index: 30;
+    width: 23%;
+    // height: 60%;
+}
+.super-container{
+    z-index: 0;
+}
+.section_2{
+    display: none;
+}
+.badge{
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(78, 224, 78);
+    bottom:0;
+    right:5%;
+}
+.badge::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    
 }

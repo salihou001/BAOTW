@@ -16,9 +16,10 @@ import { Galerie3Component } from './components/galerie3/galerie3.component';
 import { CardComponent } from './components/card/card.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { ProfilMessageComponent } from './components/profil-message/profil-message.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, DashboardComponent, NavbarComponent, Galerie1Component, Galerie2Component, Galerie3Component, CardComponent, HomePageComponent, DashboardPageComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, DashboardComponent, NavbarComponent, Galerie1Component, Galerie2Component, Galerie3Component, CardComponent, HomePageComponent, DashboardPageComponent, ProfilMessageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
