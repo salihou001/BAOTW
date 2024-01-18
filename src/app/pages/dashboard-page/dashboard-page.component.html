@@ -92,7 +92,7 @@
   <div class="h-screen sticky top-14 grid grid-cols-1 grid-rows-2 gap-2 p-2 sectionLeft">
 
     <!-- LEFT SECTION -->
-    <div class="border border-white rounded-lg bg-white dark:bg-black dark:border-white">
+    <div class="h-full rounded-lg bg-white dark:bg-black dark:border-white relative">
       <div class="wrapper p-4 relative">
         <img class="rounded-xl" src="../assets/img/fullwidth.jpg" alt="bg-img" />
         <div class="wrapper-profil absolute profilImage">
@@ -131,8 +131,8 @@
         My Profile
       </div>
     </div>
-    <div class="section_shortcuts border rounded-lg p-2 pt-8 bg-white dark:bg-black border-white dark:border-white">
-      <div class="flex items-center justify-between px-4">
+    <div class="section_shortcuts max-h-[85%] max-w-full overflow-hidden rounded-lg p-2 pt-8 bg-white dark:bg-black border-white dark:border-white">
+      <div class="flex items-center justify-between px-4 overflow-hidden">
         <div class="text-xl font-bold dark:text-white">Your Shortcuts</div>
         <div class="text-xs opacity-40 cursor-pointer hover:underline dark:text-white">
           See all
@@ -417,10 +417,13 @@
               <span class="inline-block dark:text-white text-primary">12.4K</span>
             </div>
             <div class="flex items-center gap-2 ml-auto">
-              <svg class="svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.5 3.5L3.5 9L10 12L17 7L12 14L15 20.5L20.5 3.5Z" stroke="#000000" stroke-linecap="round"
-                  stroke-linejoin="round" />
+              <svg class="w-[24px] h-[24px] fill-[#000]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z">
+                </path>
+
               </svg>
             </div>
           </div>
