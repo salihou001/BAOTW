@@ -38,7 +38,7 @@
 .section_2{
     display: none;
 }
-.badge{
+.badge_sms{
     position:absolute;
     width: 8px;
     height: 8px;
@@ -47,7 +47,7 @@
     bottom:0;
     right:5%;
 }
-.badge::before{
+.badge_sms::before{
     content: "";
     width: 12px;
     height: 12px;
