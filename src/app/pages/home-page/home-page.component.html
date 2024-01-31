@@ -1,4 +1,4 @@
-<div class="super-content w-screen h-screen relative">
+<div class="super-content w-screen h-screen relative bg-stone-200">
     <!-- header section -->
     <header class="navigation flex items-center justify-between px-4 p-3 shadow-md overflow-hidden">
       <div class="navigation_left">
@@ -23,19 +23,19 @@
     <!-- BODY -->
     <div class="body relative h-full w-full">
         <div class="body_content flex items-center w-full pt-24 px-4">
-          <div class="body_content_text text-md self-end">
-            <p class="text-6xl font-bold uppercase pr-2 body_content_text--lineFirst">the</p>
-            <p class="text-6xl font-bold uppercase pr-2 body_content_text--lineFirst mb-1">batle start <span class="text-primary text-now">now</span></p>
+          <div class="body_content_text text-md">
+            <p class="text-6xl font-bold uppercase pr-2 body_content_text--lineFirst">the batle</p>
+            <p class="text-6xl font-bold uppercase pr-2 body_content_text--lineFirst mb-1">start <span class="text-primary text-now">now</span></p>
             <p class="body_content_text--line max-h-8">La Creativite est un art qui ouvre les portes vers une</p>
             <p class="body_content_text--line max-h-8">infinite de reflexions et de solutions,C'est une discipline</p>
             <p class="body_content_text--line max-h-8">qui consiste à donner le meilleur de son imagination. Le</p>
             <p class="body_content_text--line max-h-8">Design est un portail entre le rêve et la réalité.</p>
-            <p class="submit_button cursor-pointer opacity-0 w-auto border mt-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 font-semibold" (click)="verificationAuth()">Submit My Work</p>
+            <p class="submit_button cursor-pointer opacity-0 w-auto border-2 border-stone-800 mt-1 bg-stone-200 font-semibold hover:bg-slate-800" (click)="verificationAuth()">Submit My Work</p>
           </div>
           <div class="body_content_video">
             <div class="flex items-center justify-between">
               <div class="flex items-center ">
-                  <div class="text-primary self-end text-4xl cursor-pointer">
+                  <div class="text-primary text-creative self-end text-4xl cursor-pointer">
                     Creative
                   </div>
                   <div class="self-end p-0 cursor-pointer">
@@ -52,39 +52,41 @@
  
       <!-- OVERLAY -->
       <div class="preloader h-screen w-screen absolute top-0 text-white bg-black z-10">
-          <div class="section_text absolute bottom-10 translate-y-0">
-            <p class="text-white ml-2 text-5xl text_preloader"><strong>(</strong>BEST ANIMATION OF THE WEEK<strong>)</strong></p>
-          </div>
-          <div class="section_counter">
-              <div class="absolute bottom-10 right-5">
-                <div class="counter flex items-center text-5xl">
-                  <div class="counter_row h-12 overflow-hidden"> 
-                    <div class="flex flex-col text-right translate-y-0 translatter">
-                      <div class="counter_1 h-full w-full">
-                        <span>0</span>
-                      </div>
-                      <div class="counter_1 h-full w-full">
-                        <span>2</span>
-                        <span>5</span>
-                      </div>
-                      <div class="counter_1 h-full w-full">
-                        <span>5</span>
-                        <span>0</span>
-                      </div>
-                      <div class="counter_1 h-full w-full">
-                        <span>7</span>
-                        <span>5</span>
-                      </div>
-                      <div class="counter_1 h-full w-full">
-                        <span>1</span>
-                        <span>0</span>
-                        <span>0</span>
+          <div class="relative w-full h-full">
+                <div class="section_text absolute bottom-10 translate-y-0">
+                  <p class="text-white ml-2 text-5xl text_preloader"><strong>(</strong>BEST ANIMATION OF THE WEEK<strong>)</strong></p>
+                </div>
+                <div class="section_counter">
+                    <div class="absolute bottom-10 right-5">
+                      <div class="counter flex items-center text-5xl">
+                        <div class="counter_row h-12 overflow-hidden"> 
+                          <div class="flex flex-col text-right translate-y-0 translatter">
+                            <div class="counter_1 h-full w-full">
+                              <span>0</span>
+                            </div>
+                            <div class="counter_1 h-full w-full">
+                              <span>2</span>
+                              <span>5</span>
+                            </div>
+                            <div class="counter_1 h-full w-full">
+                              <span>5</span>
+                              <span>0</span>
+                            </div>
+                            <div class="counter_1 h-full w-full">
+                              <span>7</span>
+                              <span>5</span>
+                            </div>
+                            <div class="counter_1 h-full w-full">
+                              <span>1</span>
+                              <span>0</span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>%</div>
                       </div>
                     </div>
                   </div>
-                  <div>%</div>
-                </div>
               </div>
-            </div>
-        </div>
+          </div>
   </div>

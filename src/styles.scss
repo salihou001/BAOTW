@@ -105,13 +105,12 @@ div p.galery_text {
     font-size: 0.8rem;
   }
   .wrapper_title {
-    color: aqua;
     margin-top: -0.5rem;
   }
   .section_shortcuts,
   .sectionActivity,
   .sectionSuggestion {
-    overflow: scroll;
+    overflow: hidden; // nouvelle
   }
 }
 

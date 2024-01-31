@@ -39,22 +39,22 @@ export class HomePageComponent implements OnInit {
     let TL = gsap.timeline({defaults:{duration: .5}});
     TL
       .to(".section_text",{
-        yPercent:-350,
+        bottom:'23%',
         delay: 1.01,
         ease: "power4.in"
       })
       .to(".section_text",{
-        yPercent:-850,
+        bottom:'48%',
         delay: 1.01,
         ease: "power4.in"
       })
       .to(".section_text",{
-        yPercent:-1250,
+        bottom:'73%',
         delay: 1.01,
         ease: "power4.in"
       })
       .to(".section_text",{
-        yPercent:-1700,
+        bottom:'90%',
         delay: 1.01,
         ease: "power4.in"
       })
@@ -109,7 +109,7 @@ export class HomePageComponent implements OnInit {
         ease: "power4.in"
       },"<.1")
       .fromTo(".char",{
-        y:26,
+        y:28,
       },{
         y:0,
         duration: 0.7,

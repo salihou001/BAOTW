@@ -29,7 +29,7 @@
     right:1.5%;
     background-color: white;
     z-index: 30;
-    width: 23%;
+    min-width: 23%;
     // height: 60%;
 }
 .super-container{
@@ -52,4 +52,16 @@
     width: 12px;
     height: 12px;
     
+}
+#cible{
+    border-bottom: 2px solid green;
+}
+.sms_send{
+    display: none;
+    position:fixed;
+    bottom: 0%;
+    height: 40%;
+    min-width: 25%;
+    right:25.5%;
+    // background-color: pink;
 }
